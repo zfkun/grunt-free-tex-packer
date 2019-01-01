@@ -1,0 +1,40 @@
+{
+  "name": "grunt-free-tex-packer",
+  "description": "Grunt free texture packer",
+  "version": "0.1.1",
+  "homepage": "http://free-tex-packer/grunt",
+  "author": {
+    "name": "Alexander Norinchak",
+    "email": "norinchak@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/admin/grunt-free-tex-packer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/admin/grunt-free-tex-packer/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "free-tex-packer-core": "*"
+  }
+}
