@@ -9,6 +9,7 @@
 'use strict';
 
 const texturePacker = require("free-tex-packer-core");
+const appInfo = require("../package.json");
 
 module.exports = function(grunt) {
 
@@ -16,6 +17,8 @@ module.exports = function(grunt) {
         let done = this.async();
         let options = this.options();
         let dest = options.dest || '';
+        
+        options.appInfo = appInfo;
         
         let images = [];
         
