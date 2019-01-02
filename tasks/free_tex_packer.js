@@ -19,9 +19,14 @@ module.exports = function(grunt) {
         let images = [];
         
         this.files.forEach((f) => {
-            let src = f.src.filter((filepath) => {
+            f.src.filter((filepath) => {
                 if(grunt.file.exists(filepath)) {
-                    images.push({path: filepath, contents: grunt.file.read(filepath, {encoding: null})});
+                    let imagePath = filepath;
+                    if(f.basePath && imagePath.substr(0, f.basePath.length) === f.basePath) {
+                        imagePath = imagePath.substr(f.basePath.length);
+                    }
+                    
+                    images.push({path: imagePath, contents: grunt.file.read(filepath, {encoding: null})});
                 }
             });
         });

@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         free_tex_packer: {
             demo: {
                 files: [
-                    {expand: true, src: 'src/**/*', filter: 'isFile'}
+                    {expand: true, src: 'src/**/*', basePath: 'src/', filter: 'isFile'}
                 ],
                 options: {
                     dest: 'dest'
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         free_tex_packer: {
             demo: {
                 files: [
-                    {expand: true, src: 'src/**/*', filter: 'isFile'}
+                    {expand: true, src: 'src/**/*', basePath: 'src/', filter: 'isFile'}
                 ],
                 options: {
                     dest: 'dest',
@@ -63,6 +63,11 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['free_tex_packer']);
 };
 ```
+
+# Additional parameters:
+
+basePath in files - path to be removed from sprite name in texture
+dest in options - destination folder path
 
 
 **Pack options description**: https://github.com/odrick/free-tex-packer-core#available-options
