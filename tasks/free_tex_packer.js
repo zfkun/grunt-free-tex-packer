@@ -15,6 +15,7 @@ module.exports = function(grunt) {
     grunt.registerMultiTask('free_tex_packer', 'Grunt free texture packer', function() {
         let done = this.async();
         let options = this.options();
+        let dest = options.dest || '';
         
         let images = [];
         
@@ -33,7 +34,7 @@ module.exports = function(grunt) {
         
         texturePacker(images, options, (files) => {
             for(let item of files) {
-                grunt.file.write(options.dest + '/' + item.name, item.buffer);
+                grunt.file.write(dest + '/' + item.name, item.buffer);
 			}
             
             done();
