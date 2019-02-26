@@ -1,7 +1,7 @@
 {
   "name": "grunt-free-tex-packer",
   "description": "Grunt free texture packer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "http://free-tex-packer/grunt",
   "url": "https://github.com/odrick/grunt-free-tex-packer",
   "author": {
