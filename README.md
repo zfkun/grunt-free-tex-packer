@@ -2,11 +2,13 @@
 
 [![Stats](https://nodei.co/npm/grunt-free-tex-packer.png?downloads=true&stars=true)](https://www.npmjs.com/package/grunt-free-tex-packer) \
 Free texture packer plugin for grunt \
-Based on https://github.com/odrick/free-tex-packer
+Based on https://github.com/zfkun/free-tex-packer
 
 # Install
-   
-$ npm install grunt-free-tex-packer
+
+```shell
+npm install git@github.com:zfkun/grunt-free-tex-packer.git
+```
    
 # Basic usage
 ```js
@@ -48,6 +50,7 @@ module.exports = function(grunt) {
                     height: 1024,
                     fixedSize: false,
                     padding: 2,
+                    allowSort: true,
                     allowRotation: true,
                     detectIdentical: true,
                     allowTrim: true,
@@ -70,13 +73,13 @@ basePath in files - path to be removed from sprite name in texture
 dest in options - destination folder path
 
 
-**Pack options description**: https://github.com/odrick/free-tex-packer-core#available-options
+**Pack options description**: https://github.com/zfkun/free-tex-packer-core#available-options
 
-**Custom exporters description**: https://github.com/odrick/free-tex-packer-core#custom-exporter
+**Custom exporters description**: https://github.com/zfkun/free-tex-packer-core#custom-exporter
 
 # Used libs
 
-* **Free texture packer core** - https://github.com/odrick/free-tex-packer-core
+* **Free texture packer core** - https://github.com/zfkun/free-tex-packer-core
 
 ---
 License: MIT

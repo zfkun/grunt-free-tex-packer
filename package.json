@@ -1,19 +1,19 @@
 {
   "name": "grunt-free-tex-packer",
   "description": "Grunt free texture packer",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "homepage": "http://free-tex-packer/grunt",
-  "url": "https://github.com/odrick/grunt-free-tex-packer",
+  "url": "https://github.com/zfkun/grunt-free-tex-packer",
   "author": {
     "name": "Alexander Norinchak",
     "email": "norinchak@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/admin/grunt-free-tex-packer.git"
+    "url": "git://github.com/zfkun/grunt-free-tex-packer.git"
   },
   "bugs": {
-    "url": "https://github.com/admin/grunt-free-tex-packer/issues"
+    "url": "https://github.com/zfkun/grunt-free-tex-packer/issues"
   },
   "licenses": [
     {
@@ -36,6 +36,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "free-tex-packer-core": "^0.3.4"
+    "free-tex-packer-core": "git@github.com:zfkun/free-tex-packer-core.git"
   }
 }
